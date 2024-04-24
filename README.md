@@ -65,8 +65,9 @@ Confusion Matrix:
  [ 0  0 52]]
 ```
 
+## Download report
 
-
+[View first then download](https://github.com/niladrridas/ml-loan-eligibility/blob/main/MyMLReport_LPU.pdf) 
 
 ## Usage
 
