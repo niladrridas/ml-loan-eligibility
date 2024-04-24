@@ -45,9 +45,6 @@ Prediction: Loan eligibility is predicted using the trained logistic regression 
 - **Classification Report**:
 
 ```
-Accuracy: 1.0
-
-Classification Report:
                     precision    recall  f1-score   support
 
         COLLECTION       1.00      1.00      1.00        24
@@ -57,9 +54,10 @@ COLLECTION_PAIDOFF       1.00      1.00      1.00        24
           accuracy                           1.00       100
          macro avg       1.00      1.00      1.00       100
       weighted avg       1.00      1.00      1.00       100
+```
+- **Confusion Matrix**:
 
-
-Confusion Matrix:
+```
 [[24  0  0]
  [ 0 24  0]
  [ 0  0 52]]
