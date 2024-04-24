@@ -82,7 +82,7 @@ To run the project:
 
 ## References
 
-- Dataset: [Kaggle - Loan Eligibility Dataset](https://www.kaggle.com/yourdataset)
+- Dataset: [Kaggle - Loan Eligibility Dataset](https://www.kaggle.com/datasets/zhijinzhai/loandata)
 
 - scikit-learn documentation: [scikit-learn](https://scikit-learn.org/stable/)
 
