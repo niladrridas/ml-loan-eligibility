@@ -1,3 +1,5 @@
+# 🚀 Loan Eligibility Prediction
+
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
@@ -5,51 +7,49 @@
 ![Matplotlib](https://img.shields.io/badge/-Matplotlib-3776AB?style=flat-square&logo=python&logoColor=white)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
 
-# Loan Eligibility Prediction
+Welcome to the **Loan Eligibility Prediction** project, where machine learning is leveraged to predict loan eligibility based on the financial and demographic information of applicants. The dataset, sourced from Kaggle, includes a variety of features used to train a logistic regression model for accurate predictions.
 
-This project aims to predict loan eligibility using machine learning techniques. The dataset used for this project was sourced from Kaggle and contains information about loan applicants, including demographics, financial history, and loan status.
+## 💾 Dataset Overview
 
-## Dataset
+The dataset used in this project contains several key features:
 
-The dataset was imported from Kaggle and consists of several features such as:
+- **Gender**
+- **Marital Status**
+- **Education**
+- **Applicant's Income**
+- **Co-applicant's Income**
+- **Loan Amount**
+- **Loan Term**
+- **Credit History**
+- **Loan Status** (Target Variable)
 
-- Gender
+The dataset can be found [here](https://www.kaggle.com/datasets/zhijinzhai/loandata) on Kaggle.
 
-- Marital status
+## 🛠️ Tech Stack
 
-- Education
+This project is built using Python and several powerful libraries commonly used in machine learning:
 
-- Applicant's income
+- **[Python](https://www.python.org/)**
+- **[NumPy](https://numpy.org/)** - Numerical computing
+- **[Pandas](https://pandas.pydata.org/)** - Data manipulation and analysis
+- **[scikit-learn](https://scikit-learn.org/)** - Machine learning model building and evaluation
+- **[Matplotlib](https://matplotlib.org/)** - Data visualization
 
-- Co-applicant's income
+## 🧑‍💻 Methodology
 
-- Loan amount
+This project follows a structured approach, covering the entire machine learning pipeline:
 
-- Loan term
+1. **Data Import**: The dataset is imported using `pandas.read_csv()`.
+2. **Data Preprocessing**: Missing values are handled, categorical variables are encoded, and feature scaling is applied to ensure the model performs optimally.
+3. **Model Training**: A logistic regression model is trained using `LogisticRegression` from `scikit-learn`.
+4. **Model Evaluation**: Performance is measured using accuracy, precision, recall, and F1-score.
+5. **Prediction**: Loan eligibility predictions are made using the trained model.
 
-- Credit history
+## 📊 Model Performance
 
-- Loan status (target variable)
+### 🔥 **Accuracy**: 1.0
 
-## Programming Language and Libraries
-
-The project is implemented in Python using popular machine learning libraries such as pandas, scikit-learn, and matplotlib. These libraries are widely used for data manipulation, model training, and visualization in machine learning projects.
-
-## Methodology
-
-The project follows these basic steps:
-
-Data Import: The dataset is imported from Kaggle using pandas' read\_csv() function.
-Data Preprocessing: Data preprocessing steps include handling missing values, encoding categorical variables, and feature scaling.
-Model Training: A logistic regression model is trained using scikit-learn's LogisticRegression class.
-Model Evaluation: The model is evaluated using accuracy, precision, recall, and F1-score metrics.
-Prediction: Loan eligibility is predicted using the trained logistic regression model.
-
-## Model Evaluation Results
-
-- **Accuracy**: 1.0
-
-- **Classification Report**:
+### 📈 **Classification Report**:
 
 ```
                     precision    recall  f1-score   support
@@ -62,7 +62,8 @@ COLLECTION_PAIDOFF       1.00      1.00      1.00        24
          macro avg       1.00      1.00      1.00       100
       weighted avg       1.00      1.00      1.00       100
 ```
-- **Confusion Matrix**:
+
+### 📊 **Confusion Matrix**:
 
 ```
 [[24  0  0]
@@ -70,26 +71,38 @@ COLLECTION_PAIDOFF       1.00      1.00      1.00        24
  [ 0  0 52]]
 ```
 
-## Download report
+## 📄 Report
 
-[View first then download](https://github.com/niladrridas/ml-loan-eligibility/blob/main/MyMLReport_LPU.pdf) 
+🔗 [View Report](/doc/report.pdf)
 
-## Usage
+## 💻 Usage
 
-To run the project:
+### Follow these steps to run the project:
 
-1. Clone the repository to your local machine.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/niladrridas/ml-loan-eligibility.git
+   cd ml-loan-eligibility
+   ```
 
-2. Install the required libraries using \`pip install -r requirements.txt\`.
+2. **Install Required Libraries**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. Run the main script \`loan\_eligibility\_prediction.py\`.
+3. **Run the Main Script**:
+   ```bash
+   python main.py
+   ```
 
-4. View the results and predictions.
+4. **View Results and Predictions** directly in the terminal or through visual outputs.
 
-## References
+## 📚 References
 
-- Dataset: [Kaggle - Loan Eligibility Dataset](https://www.kaggle.com/datasets/zhijinzhai/loandata)
+- **Dataset**: [Kaggle - Loan Eligibility Dataset](https://www.kaggle.com/datasets/zhijinzhai/loandata)
+- **scikit-learn documentation**: [scikit-learn](https://scikit-learn.org/stable/)
+- **pandas documentation**: [pandas](https://pandas.pydata.org/docs/)
 
-- scikit-learn documentation: [scikit-learn](https://scikit-learn.org/stable/)
+---
 
-- pandas documentation: [pandas](https://pandas.pydata.org/docs/)
+Feel free to fork this repository, submit issues, or contribute with improvements. Happy coding! 🎉
